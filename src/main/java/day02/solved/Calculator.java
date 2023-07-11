@@ -4,22 +4,22 @@ package day02.solved;
 
 public class Calculator {
 	public int add(int a, int b) {
-		System.out.println("Integer addition");
+//		System.out.println("Integer addition");
 		return a + b;
 	}
 
 	public double add(double a, double b) {
-		System.out.println("Double addition");
+//		System.out.println("Double addition");
 		return a + b;
 	}
 
 	float add(float a, float b) {
-		System.out.println("Float addition");
+//		System.out.println("Float addition");
 		return a + b;
 	}
 
 	public String add(String a, String b) {
-		System.out.println("String addition");
+//		System.out.println("String addition");
 		return a + b;
 	}
 
