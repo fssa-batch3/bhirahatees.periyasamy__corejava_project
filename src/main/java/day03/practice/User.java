@@ -52,12 +52,12 @@ public class User {
 	
 	public static void main(String [] args) {
 		
-		User_class student1 = new User_class("Gopikannan","gopikannan2902@gmail.com","Redvelvet2002");
+		User student1 = new User("Bhirahatees","bhirahatees@gmail.com","Bhirahatees@2005");
 		System.out.println("Student 1 Name : "+student1.name);
 		System.out.println("Student 1 Email : "+student1.email);
 		System.out.println("Student 1 Password : "+student1.password);
 		
-		User_class student2 = new User_class();
+		User student2 = new User();
 		student2.setName("Arun");
 		student2.setEmail("arun2002@gmail.com");
 		student2.setPassword("arun2002@");
