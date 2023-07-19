@@ -13,16 +13,16 @@ public class removeDuplicate {
 		
 		
 		System.out.println(cityList);
-		List<String> unique = new ArrayList<>();
+		ArrayList<String> uniques = new ArrayList<>();
 
  
         for (String city : cityList) {   
-            if (!unique.contains(city)) {
-                unique.add(city);
+            if (!uniques.contains(city)) {
+                uniques.add(city);
             }
         }
 
-       System.out.println(unique);
+       System.out.println(uniques);
 		
 		
 	}
