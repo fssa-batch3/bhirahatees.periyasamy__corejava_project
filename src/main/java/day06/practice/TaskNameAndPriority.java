@@ -12,7 +12,7 @@ public class TaskNameAndPriority {
 	tasks.add(new Task("Bathing" , 1));
 	
 	for(Task task : tasks) {
-		System.out.println("Task : " + task.task + " , Priority :" + task.priority);
+		System.out.println("Task : " + task.getTask() + " , Priority :" + task.priority);
 	}
 	
 	

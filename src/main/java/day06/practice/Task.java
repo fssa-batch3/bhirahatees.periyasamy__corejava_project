@@ -1,10 +1,30 @@
 package day06.practice;
 
 public class Task {
-	String task;
+	public String getName() {
+		return name;
+	}
+
+	public int getPriority() {
+		return priority;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+
+	private String name;
 	int priority;
- public Task(String task , int priority) {
-	 this.task = task;
-	 this.priority = priority;
- }
+
+	public Task() {
+
+	}
+
+
+
+
 }

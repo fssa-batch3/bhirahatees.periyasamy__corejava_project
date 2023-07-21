@@ -7,7 +7,7 @@ public class findTaskByName {
 
 	public static boolean find(String name , ArrayList<Task> tasks) {
 		   for(Task task : tasks) {
-		        if(task.task.equals(name)) {
+		        if(task.getTask().equals(name)) {
 		            return true;
 		        }
 		    }
