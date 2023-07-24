@@ -1,8 +1,11 @@
-package day03.practice;
+package day03.test;
+import day03.practice.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import day03.practice.Employee;
 
 public class TestEmployee {
 

@@ -6,29 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-class Task {
-	private int id;
-	private String name;
-	private String status;
-	public Task(int id , String name , String status) {
-		this.id = id;
-		this.name = name;
-		this.status = status;
-	}
-	public int getId() {
-		return id;
-	}
-	public String getName() {
-		return name;
-	}
-	public String getStatus() {
-		return status;
-	}
 
-}
 
-public class TASKDao {
-	public static void addTasks(Task task) throws SQLException {
+public class TaskDAO {
+	public void addTasks(Task task) throws SQLException {
 	    // Write code here to get connection
 	    Connection connection = ConnectionUtil.getConnection();
 	    Statement stmt = connection.createStatement();

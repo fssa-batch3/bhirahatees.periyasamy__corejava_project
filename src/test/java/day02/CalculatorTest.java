@@ -1,4 +1,4 @@
-package day02.test;
+package day02;
 
 import day02.solved.*;
 
