@@ -9,6 +9,22 @@ public class Task {
 	private String taskName;
 	private int priority;
 	private int id;
+	private String status;
+	
+	public Task() {
+		
+		
+	}
+	public String getStatus() {
+		return status;
+	}
+
+
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	private LocalDate deadline;
 
 	public Task(String name, int id, LocalDate date) {
