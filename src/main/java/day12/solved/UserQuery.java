@@ -20,22 +20,23 @@ public class UserQuery {
 		Statement stmt = connection.createStatement();
 
 //        // Step 03: Execute Insert Query
-		String query = "INSERT INTO task (taskId,name,status) VALUES (\"4\",\"Task 4\", \"Completed\")";
-		int rows = stmt.executeUpdate(query);
-		System.out.println("No of rows inserted :" + rows);
+//		String query = "INSERT INTO task (taskId,name,status) VALUES (\"4\",\"Task 4\", \"Completed\")";
+//		int rows = stmt.executeUpdate(query);
+//		System.out.println("No of rows inserted :" + rows);
 
 		// Step 04: Execute SELECT Query
-		final String selectQuery = "SELECT taskId,name,status FROM task WHERE status = \"Pending\"";
+		final String selectQuery = "SELECT taskId,name,status FROM task WHERE taskId = \"2\"";
 
 		// Step 05: Get the resultset
 		ResultSet rs = stmt.executeQuery(selectQuery);
 //		System.out.println(rs.toString());
 		// Step 06: Iterate the result
+		System.out.println(rs.toString());
 		while (rs.next()) {
 			int userId = rs.getInt("taskId");
 			String userName = rs.getString("name");
 			String status = rs.getString("status");
-
+        
 			System.out.println("TaskId:" + userId + ", TaskName:" + userName + ", Status :" + status);
 		}
 
